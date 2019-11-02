@@ -3,8 +3,8 @@ package com.ge.exercise1;
 import java.util.Collection;
 
 public abstract class Application {
-    private String id;
-    private String name;
+    public String id;
+    public String name;
 
     public Application(String id, String name) {
         this.id = id;
@@ -34,5 +34,6 @@ public abstract class Application {
     public abstract Collection<Group> getGroups();
 
     public abstract Group getGroup(String groupId);
+
 
 }

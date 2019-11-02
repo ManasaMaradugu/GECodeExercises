@@ -18,7 +18,9 @@ public class ArrayQuadrantUtilTest {
 
         ArrayQuadrantUtil util = new ArrayQuadrantUtil(data);
         Assume.assumeNotNull(util.getQuadrantValues(0, 0));
-
+        Assume.assumeNotNull(util.getQuadrows(0));     
+        Assume.assumeNotNull(util.getQuadCol(1));
+        
         char[] expectedResult = {'a', 'b', 'e', 'f'};
         assertArrayEquals(expectedResult, util.getQuadrantValues(0, 0));
     }
